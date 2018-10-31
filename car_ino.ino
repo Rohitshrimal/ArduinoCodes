@@ -6,6 +6,8 @@ int vel = 150; // Velocidad de los motores (0-255)
 int estado = 'c'; // inicia detenido
 
 void setup() { 
+  //this input can be taken from serial in/serial out nodes from node-red installed on pi.
+  //make sure to connect your arduino to pi with serial cable.
 Serial.begin(9600); // inicia el puerto serial para comunicacion con el Bluetooth
 pinMode(derA, OUTPUT);
 pinMode(derB, OUTPUT);
